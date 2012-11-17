@@ -21,7 +21,6 @@ class DOJIJSCaller
 	{
 		if ($handle = opendir($path)) 
 			{
-			    /* This is the correct way to loop over the directory. */
 				ob_clean();
 				flush();
 		    	while (false !== ($file = readdir($handle))) 
