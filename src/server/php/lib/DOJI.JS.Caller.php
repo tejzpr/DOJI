@@ -69,7 +69,7 @@ class DOJIJSCaller
 				}
 				else
 				{
-					throw new Exception("The javascript class could not be read");
+					throw new Exception("The javascript file ".$p_FileName." could not be read");
 				}
 			}
 			else if($this->jsClass=="*")
@@ -79,7 +79,7 @@ class DOJIJSCaller
 		}
 		else
 		{
-			throw new Exception("The javascript class could not be read");
+			throw new Exception("The directory could not be read");
 		}
 		
 	}
