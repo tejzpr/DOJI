@@ -8,6 +8,15 @@
 var Calledgroup=new Array();
 var CalledgroupCounter=0;
 var DOJI = {};
+var dojidebug = false;
+
+function dojialert(msg)
+{
+	if(dojidebug)
+	{
+		alert(msg);
+	}
+}
 
 function doji_in_array(needle, haystack, argStrict) 
 {
@@ -144,7 +153,7 @@ DOJI.dimport=function(functionName)
 								}
 								catch(e)
 								{
-									alert("JS import error ("+functionName+"): "+e.message);
+									dojialert("JS import error ("+functionName+"): "+e.message);
 									returnValue=e.message;
 								}
 							}
@@ -260,7 +269,7 @@ DOJI.execute=function(functionName)
 							}
 							catch(e)
 							{
-								alert("JS Call evaluation error ("+functionName+"): "+e.message);
+								dojialert("JS Call evaluation error ("+functionName+"): "+e.message);
 								returnValue=e.message;
 							}
 					}
