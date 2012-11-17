@@ -7,17 +7,7 @@
 */
 var Calledgroup=new Array();
 var CalledgroupCounter=0;
-function doji_registernamespace(ns)
-{
-	var nsParts = ns.split(".");
-	var root = window;
-	for(var i=0; i<nsParts.length; i++)
-	{
-		if(typeof root[nsParts[i]] == "undefined")
-		root[nsParts[i]] = new Object();
-		root = root[nsParts[i]];
-	}
-}
+var DOJI = {};
 
 function doji_in_array(needle, haystack, argStrict) 
 {
@@ -37,7 +27,7 @@ function doji_in_array(needle, haystack, argStrict)
     }
     return false;
 }
-doji_registernamespace("DOJI.dimport");
+
 DOJI.dimport=function(functionName)
 {
 	var dojiService='./DOJI.php';
@@ -172,7 +162,6 @@ DOJI.dimport=function(functionName)
 }
 
 
-doji_registernamespace("DOJI.execute");
 DOJI.execute=function(functionName)
 {
 	var dojiService='./DOJI.php';
