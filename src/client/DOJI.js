@@ -8,11 +8,11 @@
 var Calledgroup=new Array();
 var CalledgroupCounter=0;
 var DOJI = {};
-var dojidebug = false;
+var dojishowalerts = false;
 
 function dojialert(msg)
 {
-	if(dojidebug)
+	if(dojishowalerts)
 	{
 		alert(msg);
 	}
