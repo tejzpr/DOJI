@@ -16,7 +16,7 @@ class DOJIMain
 	{
 		try
 		{
-			$configs = parse_ini_file("./doji-config.ini",true);
+			$configs = parse_ini_file("../../../doji-config.ini",true);
 	    	return $configs["doji"];
 		}
 		catch(Exception $e)
