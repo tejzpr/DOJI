@@ -1,9 +1,9 @@
 <?php
 /*
  * DOJI : Import Javascript On Demand
- * http://www.tejuspratap.com/doji/
+ * http://tejus.me/doji/
  *
- * Copyright (c) 2009 Tejus Pratap
+ * Copyright Tejus Pratap
  * Dual licensed under the MIT and GPL licenses.
 */
 class DOJIJSCaller
